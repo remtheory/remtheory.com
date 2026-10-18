@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rachel's North Park Ballot</title>
+<meta name="description" content="How Rachel is voting on the November 3, 2026 California ballot in North Park, San Diego, with what each local and statewide group decided.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}</style>
+<style>
+/* Layout: a single reading column like a newsletter post, under a navy masthead, in the remtheory palette (warm paper, teal, orange actions). */
+:root{
+  --paper:#faf9f7; --sheet:#ffffff; --ink:#1c1917; --muted:#78716c; --rule:#e7e3dc;
+  --oval:#ea580c; --oval-fill:#ea580c; --yes:#15803d; --no:#c2410c; --neutral:#8a6d1d; --chip:#f3f0eb; --field:#faf9f7;
+  --teal:#0f766e; --navy:#0f2b35; --onnavy:#ffffff; --onnavy-soft:#99f6e4;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0c1f26; --sheet:#12303a; --ink:#f3f0eb; --muted:#a8b8bc; --rule:#1f4350;
+  --oval:#fb923c; --oval-fill:#fb923c; --yes:#4ade80; --no:#fdba74; --neutral:#e5c065; --chip:#173a45; --field:#0f2b35;
+  --teal:#5eead4; --navy:#081a20; --onnavy:#ffffff; --onnavy-soft:#99f6e4; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0c1f26; --sheet:#12303a; --ink:#f3f0eb; --muted:#a8b8bc; --rule:#1f4350;
+  --oval:#fb923c; --oval-fill:#fb923c; --yes:#4ade80; --no:#fdba74; --neutral:#e5c065; --chip:#173a45; --field:#0f2b35;
+  --teal:#5eead4; --navy:#081a20; --onnavy:#ffffff; --onnavy-soft:#99f6e4; color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);padding-inline:16px;padding-block:0 72px}
+.topbar{background:var(--navy);margin-inline:-16px;padding:16px;display:flex;justify-content:center}
+.topbar span{font:500 17px var(--display);color:var(--onnavy);letter-spacing:.01em}
+.topbar span em{font-style:normal;color:var(--onnavy-soft)}
+.topbar a{text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+.topbar a:hover,.topbar a:focus-visible{border-bottom-color:var(--onnavy-soft);outline:none}
+.wrap{max-width:728px;margin:0 auto;display:flex;flex-direction:column;gap:40px;padding-top:40px}
+header{display:flex;flex-direction:column;gap:12px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--teal)}
+h1{font:300 clamp(34px,6vw,48px)/1.1 var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+.lede{margin:0;max-width:64ch;color:var(--muted);font:400 18px/1.55 var(--body);max-width:62ch}
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13px;color:var(--muted);padding-block:12px;border-block:1px solid var(--rule)}
+.progress{font:600 13px var(--body);font-variant-numeric:tabular-nums;color:var(--ink)}
+.progress::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--oval);margin-right:8px;vertical-align:1px}
+.status{font:500 12px var(--mono)}
+.podcast{margin:0;font:500 15px/1.5 var(--body);color:var(--ink);background:var(--chip);border-radius:14px;padding:10px 16px}
+.podcast a{color:var(--teal);font-weight:700}
+.lede a{color:var(--teal);font-weight:600}
+.aside{margin:0;font:400 italic 16px/1.55 var(--display);color:var(--ink);max-width:64ch}
+h2{font:500 28px/1.2 var(--display);margin:0;padding:0;border:0;text-transform:none;letter-spacing:-.005em}
+section{display:flex;flex-direction:column;gap:14px}
+.legend{font-size:14px;color:var(--muted);margin:0}
+.contest{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 22px}
+@media (max-width:620px){.contest{grid-template-columns:1fr}}
+.contest h3{margin:0;font:600 20px/1.25 var(--display);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.num{font:700 12px var(--body);letter-spacing:.06em;color:var(--teal)}
+.contest p{margin:4px 0 0;max-width:62ch;font-size:15px}
+.flag{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;color:var(--neutral)}
+.ends{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.end{font:500 12px var(--body);background:var(--chip);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.end b{font-weight:700}
+.end .Y{color:var(--yes)} .end .N{color:var(--no)} .end .U{color:var(--neutral)} .end .D{color:var(--muted)}
+.choices{display:flex;flex-direction:column;gap:8px;min-width:150px}
+.choice{display:flex;align-items:center;gap:10px;background:none;border:0;padding:4px 2px;color:var(--ink);font:600 14px var(--body);cursor:pointer;text-align:left;border-radius:6px}
+.choice:focus-visible{outline:2px solid var(--oval);outline-offset:2px}
+.oval{width:30px;height:14px;border:2px solid var(--oval);border-radius:50%;flex:none;transition:background .15s}
+.choice[aria-pressed="true"] .oval{background:var(--oval-fill)}
+.note{grid-column:1/-1}
+.note input{width:100%;box-sizing:border-box;font:14px var(--body);color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:8px;padding:8px 12px}
+.note input:focus{outline:2px solid var(--oval);outline-offset:0;border-color:transparent}
+.todo{background:var(--sheet);border:1px dashed var(--rule);border-radius:12px;padding:14px 16px;color:var(--muted);margin:0}
+footer{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--rule);padding-top:20px}
+footer a{color:var(--teal)}
+h4{font:600 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 0}
+.judges{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.judge{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.judge .court{font-size:12px;color:var(--muted)}
+.judge .name{font:600 17px var(--display)}
+.judge .choices{flex-direction:row;gap:14px;min-width:0}
+.guides{display:flex;flex-direction:column;gap:8px;background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:16px 18px}
+.guides-label{font:700 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}
+.guides ul{list-style:none;margin:0 0 6px;padding:0;display:flex;flex-wrap:wrap;gap:6px 8px}
+.guides a{display:inline-block;font:500 14px var(--body);color:var(--ink);text-decoration:none;background:var(--chip);border-radius:999px;padding:4px 12px}
+.guides a:hover,.guides a:focus-visible{background:var(--teal);color:var(--sheet);outline:none}
+.judgenote{margin:6px 0 0;font:400 15px/1.6 var(--body);color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-left:3px solid var(--oval);border-radius:14px;padding:14px 18px;max-width:none}
+.mynote{grid-column:1/-1;margin:0;font:400 italic 15px/1.5 var(--display);color:var(--ink);border-left:3px solid var(--oval);padding:2px 0 2px 12px}
+.choice[disabled]{cursor:default}
+.choice[disabled][aria-pressed="false"]{color:var(--muted)}
+.unopp{font-size:13px;color:var(--muted);margin:4px 0 0}
+@media (prefers-reduced-motion:reduce){.oval{transition:none}}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="https://www.sdvote.com/content/rov/en/voting-options.html"><span>Vote by <em>November 3!</em></span></a></div>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">California general election · Tuesday, November 3, 2026</span>
+    <h1>Rachel's North Park Ballot</h1>
+    <p class="lede">Here's how I'm voting this year. My picks lean progressive and are shaped by the local and statewide groups I typically agree with, and you'll see what each of them decided next to each contest so you can compare and make your own calls. Wherever I've added a note, that's my reasoning in my own words. The most controversial (really the only one I go against everyone on) is Measure B. Please vote, and send this to anyone who could use a nudge!</p>
+    <p class="lede">Also don't forget to bring your ballot to a real ballot box at your local library or vote in person. God only knows what shenanigans are going to happen this year. Maybe none, maybe lots. It's a rollercoaster!</p>
+    <p class="lede">These picks are very specific to my North Park ballot, so yours may look a little different. You can see your own ballot by looking up your address on <a href="https://calmatters.org/california-voter-guide-2026/my-ballot/">CalMatters</a> or <a href="https://www.ballotready.org/us/california">BallotReady</a>.</p>
+    <nav class="guides" aria-label="Voter guides">
+      <span class="guides-label">Guides I used</span>
+      <ul>
+        <li><a href="https://cadem.org/wp-content/uploads/2026/08/FINAL-2026-General-Election-Endorsements.pdf">California Democratic Party</a></li>
+        <li><a href="https://lwvc.org/ballot-recommendations-nov-3-2026/">League of Women Voters of California</a></li>
+        <li><a href="https://couragecalifornia.org/2026-midterm-election-resources/">Courage California</a></li>
+        <li><a href="https://workingfamilies.org/candidates/">Working Families Party</a></li>
+        <li><a href="https://www.dsasandiego.org/november-2026-voter-guide">DSA San Diego</a></li>
+        <li><a href="https://sandiego350.org/2026/09/24/november-2026-ballot-measure-recommendations-voting/">SanDiego350</a></li>
+        <li><a href="https://www.unionyes.org/2026-endorsements">San Diego &amp; Imperial Counties Labor Council</a></li>
+        <li><a href="https://www.sddemocrats.org/propositions--ballot-measures.html">San Diego County Democratic Party</a></li>
+      </ul>
+      <span class="guides-label">Neutral explainers</span>
+      <ul>
+        <li><a href="https://voterguide.sos.ca.gov/">Official State Voter Guide</a></li>
+        <li><a href="https://calmatters.org/california-voter-guide-2026/">CalMatters Voter Guide</a></li>
+        <li><a href="https://voiceofsandiego.org/2026/10/05/voice-of-san-diegos-no-bs-2026-voter-guide/">Voice of San Diego No BS Guide</a></li>
+        <li><a href="https://www.sdvote.com/">San Diego Registrar of Voters</a></li>
+      </ul>
+    </nav>
+    <div class="bar"><p class="aside">Yes, I had Claude make this for me, yes, I asked Claude to collate all the information, and yes, I checked the information out and confirmed. This is me using AI as it should be used. To bring together and synthesize information much faster than I ever could, think critically about it, and make choices... then hang out with humans IRL!</p></div>
+  </header>
+
+  <section>
+    <h2>State propositions</h2>
+    <p class="legend">Under each prop you'll see what each group decided. Y means support, N means oppose, and a dash means no position. A yellow flag marks the props where the groups split.</p>
+    <p class="podcast">If you want to hear me chat about Props 40, 41, and 42, <a href="https://www.publicspeakpodcast.com/p/yes-on-40-no-on-41-and-42-untangling">have a listen</a>!</p>
+    <div id="props"></div>
+  </section>
+
+  <section>
+    <h2>Candidates</h2>
+    <p class="legend">Every candidate race on my North Park sample ballot, grouped the way the ballot groups them. Yours may differ a bit depending on your district. Under each race you'll see who the groups endorsed.</p>
+    <div id="races"></div>
+  </section>
+
+  <section>
+    <h2>Local measures</h2>
+    <p class="legend">County and San Diego Unified measures, with local group positions.</p>
+    <div id="locals"></div>
+  </section>
+
+  <section>
+    <h2>Judicial retention</h2>
+    <p class="legend">Yes keeps the justice on the bench for a new term; no removes them. No one runs against them.</p>
+    <div class="judges" id="judges"></div>
+    <p class="judgenote">Why I'm voting yes on every judge. These are retention votes, so nobody is running against these justices and a no vote would simply remove them from the bench. I looked for organized campaigns against any of them, public discipline records, or serious controversies, and came up empty for all 17. Both Supreme Court justices have clean records, and the 15 appeals court justices have no opposition or red flags that I could find. Two of them, Lisa Rodriguez and Juliet Macaulay, were just appointed this August, so there isn't much of a track record yet. My rule of thumb is to keep a judge unless there's a real reason not to, and this year I didn't find one.</p>
+  </section>
+
+  <footer>
+    <span>Positions come from each group's published guide, linked at the top. Contest list from the San Diego County sample ballot.</span>
+    <span>Last updated October 18, 2026. Missed the October 19 registration deadline? California has same-day registration at any vote center through Election Day.</span>
+  </footer>
+</div>
+
+<script id="ballot-state" type="application/json">{"picks":{"p1":"YES","p3":"YES","p39":"NO","p43":"NO","p44":"NO","p5":"YES","p37":"YES","p40":"YES","p41":"NO","p45":"NO","gov":"Xavier Becerra (D)","ltgov":"Fiona Ma (D)","sos":"Shirley Weber (D)","ag":"Rob Bonta (D)","treas":"Eleni Kounalakis (D)","spi":"Richard Barrera","ins":"Jane Kim (D)","boe4":"Tom Umberg (D)","p2":"YES","p4":"YES","p38":"YES","p42":"NO","ctrl":"Malia Cohen (D)","cd50":"Scott Peters (D)","sup4":"Monica Montgomery Steppe","assr":"Jordan Z. Marks","mB":"NO","mA":"YES","mM":"YES","j_joshuagroban":"YES","j_kellimevans":"YES","j_juliackelety":"YES","j_josescastillo":"YES","j_tructdo":"YES","j_williamsdato":"YES","j_eranmbermudez":"YES","j_lisarodriguez":"YES","j_davidmrubin":"YES","j_coreyglee":"YES","j_michaeljraphael":"YES","j_joannemotoike":"YES","j_thomasadelaney":"YES","j_nathanrscott":"YES","j_deborahcservino":"YES","j_marthakgooding":"YES","j_julietomacaulay":"YES","ad78":"Chris Ward (D)","ttc":"Larry Cohen"},"notes":{"mB":"Voting no: sales taxes are regressive, and the county and city keep asking the most vulnerable to fix problems instead of putting the onus on the wealthy. I don't trust this will fix anything as we've passed taxes like this before with nothing good coming out of it."}}</script>
+<script>
+(function(){
+const PROPS = [
+ {n:1,t:"Housing and veterans bonds",s:"Borrows $11.25 billion: $10 billion for affordable housing and $1.25 billion for veterans' home loans.",e:["Y","Y","Y","Y","Y","Y","Y"]},
+ {n:2,t:"Bigger Rainy Day Fund",s:"Raises the cap on the state's budget reserve from 10% to 20% of the general fund.",e:["Y","Y","Y","Y","Y","Y","Y"]},
+ {n:3,t:"Make high-earner tax rates permanent",s:"Keeps current income tax rates on the top earners past 2030 to fund schools and health care.",e:["Y","Y","Y","Y","Y","Y","Y"]},
+ {n:4,t:"Allow public campaign financing",s:"Lifts the 1988 ban so state and local governments can create voluntary public financing programs.",e:["Y","Y","Y","Y","Y","Y","Y"]},
+ {n:5,t:"Recall reform",s:"Ends the same-ballot replacement race; the lieutenant governor steps in and voters pick a successor at the next statewide election.",e:["Y","Y","-","Y","Y","Y","Y"]},
+ {n:37,t:"Middle-income homebuyer loans",s:"Lets the state housing finance agency borrow up to $25 billion for second-mortgage help on new homes.",e:["Y","N","-","-","-","-","Y"]},
+ {n:38,t:"Immunology research bonds",s:"Borrows $8.4 billion for research on immune-system treatments.",e:["Y","N","N","Y","N","-","-"]},
+ {n:39,t:"Voter ID",s:"Requires government-issued ID to vote, with free state ID cards and new voter-list rules.",e:["N","N","N","N","N","N","N"]},
+ {n:40,t:"One-time billionaire tax",s:"A one-time 5% tax on assets over $1 billion for people living in California on Jan 1, 2026, funding health care, education, and food aid.",e:["Y","U","Y","Y","Y","Y","Y"]},
+ {n:41,t:"Spending-limit rules and tax audits",s:"Bars new taxes that sit outside the state spending limit and adds audits of special taxes. Can knock out Prop 40 if it gets more yes votes.",e:["N","N","-","N","N","N","N"]},
+ {n:42,t:"Ban on personal property taxes",s:"Bans new state taxes on personal property and some retroactive taxes. Also conflicts with Prop 40.",e:["N","N","-","N","N","N","N"]},
+ {n:43,t:"Two-thirds vote for citizen local taxes",s:"Raises the bar for voter-proposed local special taxes from a simple majority to two-thirds, starting 2027.",e:["N","N","N","N","N","N","N"]},
+ {n:44,t:"Clinic spending rule",s:"Requires community health centers to spend 90% of revenue on program services.",e:["N","N","N","N","Y","-","Y"]},
+ {n:45,t:"Environmental review changes",s:"Speeds certain projects by changing environmental review requirements.",e:["N","N","N","N","N","N","N"]}
+];
+const RACES = [
+ {g:"State",id:"gov",t:"Governor",c:["Xavier Becerra (D)","Steve Hilton (R)"],e:["CADEM: Becerra"]},
+ {g:"State",id:"ltgov",t:"Lieutenant Governor",c:["Fiona Ma (D)","Gloria Romero (R)"],e:["CADEM: Ma"]},
+ {g:"State",id:"sos",t:"Secretary of State",c:["Shirley Weber (D)","Don Wagner (R)"],e:["CADEM: Weber"]},
+ {g:"State",id:"ctrl",t:"Controller",c:["Malia Cohen (D)","Herb W. Morgan (R)"],e:["CADEM: Cohen"]},
+ {g:"State",id:"treas",t:"Treasurer",c:["Eleni Kounalakis (D)","Jennifer Hawks (R)"],e:["CADEM: Kounalakis"]},
+ {g:"State",id:"ag",t:"Attorney General",c:["Rob Bonta (D)","Michael E. Gates (R)"],e:["CADEM: Bonta"]},
+ {g:"State",id:"ins",t:"Insurance Commissioner",c:["Ben Allen (D)","Jane Kim (D)"],e:["CADEM: Allen","WFP: Kim","DSA SD: Kim","Labor: Kim"],f:"Two Democrats in this one"},
+ {g:"State",id:"boe4",t:"Board of Equalization, District 4",c:["Tom Umberg (D)","Denis Bilodeau (R)"],e:["CADEM: Umberg"]},
+ {g:"Federal and legislative",id:"cd50",t:"U.S. Representative, 50th District",c:["Scott Peters (D)","Steve Cohen (R)"],e:["CADEM: Peters","Labor: Peters"]},
+ {g:"Federal and legislative",id:"ad78",t:"State Assembly, 78th District",c:["Chris Ward (D)","Payton Galvez (R)"],e:["CADEM: Ward","Labor: Ward"]},
+ {g:"School",id:"spi",t:"Superintendent of Public Instruction",c:["Richard Barrera","Sonja Shaw"],e:["CADEM: Barrera","Labor: Barrera"]},
+ {g:"County",id:"sup4",t:"Board of Supervisors, District 4",c:["Monica Montgomery Steppe","Kristine C. Alessio"],e:["WFP: Montgomery Steppe","DSA SD: Montgomery Steppe","Labor: Montgomery Steppe"]},
+ {g:"County",id:"ttc",t:"Treasurer-Tax Collector",c:["Larry Cohen","Shirley Nakawatase"],e:["Labor: Cohen"]},
+ {g:"County",id:"assr",t:"Assessor/Recorder/County Clerk",c:["Jordan Z. Marks"],e:[],u:"Running unopposed"}
+];
+const LOCALS = [
+ {id:"mA",n:"Measure A",t:"County charter update",s:"Amends the county charter to add an independent ethics commission, budget analyst, and program auditor, move supervisor term limits from two terms to three, and require public spending and performance data.",e:["SD Dems: Y","DSA SD: Y","SD350: Y","Labor: Y"]},
+ {id:"mB",n:"Measure B",t:"County half-cent sales tax",s:"A half-cent county sales tax, about $400–450 million a year, for Tijuana River Valley sewage cleanup, wildfire prevention, emergency response, healthcare, food assistance, and child development, with citizen oversight and audits. No end date unless voters end it.",e:["SD Dems: Y","DSA SD: Y","SD350: Y","Labor: Y"]},
+ {id:"mM",n:"Measure M",t:"San Diego Unified school bond",s:"$3.5 billion in bonds for school repairs, safe drinking water, asbestos and lead removal, and classroom upgrades, at $32 per $100,000 of assessed value. Billed as no tax rate increase.",e:["SD Dems: Y","DSA SD: Y","SD350: Y","Labor: Y"],o:["Bonds yes","Bonds no"]}
+];
+const JUDGES = [
+ ["Supreme Court","Joshua Groban"],["Supreme Court","Kelli M. Evans"],
+ ["Court of Appeal 4th Dist., Div. 1","Julia C. Kelety"],["Court of Appeal 4th Dist., Div. 1","Jose S. Castillo"],["Court of Appeal 4th Dist., Div. 1","Truc T. Do"],["Court of Appeal 4th Dist., Div. 1","William S. Dato"],["Court of Appeal 4th Dist., Div. 1","Eran M. Bermudez"],["Court of Appeal 4th Dist., Div. 1","Lisa Rodriguez"],["Court of Appeal 4th Dist., Div. 1","David M. Rubin"],
+ ["Court of Appeal 4th Dist., Div. 2","Corey G. Lee"],["Court of Appeal 4th Dist., Div. 2","Michael J. Raphael"],
+ ["Court of Appeal 4th Dist., Div. 3 (Presiding)","Joanne Motoike"],["Court of Appeal 4th Dist., Div. 3","Thomas A. Delaney"],["Court of Appeal 4th Dist., Div. 3","Nathan R. Scott"],["Court of Appeal 4th Dist., Div. 3","Deborah C. Servino"],["Court of Appeal 4th Dist., Div. 3","Martha K. Gooding"],["Court of Appeal 4th Dist., Div. 3","Juliet O. Macaulay"]
+];
+const ORGS=["CADEM","LWVC","Courage","WFP","DSA SD","SD350","Labor"];
+const LBL={Y:"Y",N:"N",U:"Neutral","-":"–"};
+const CLS={Y:"Y",N:"N",U:"U","-":"D"};
+let state;
+try{state=JSON.parse(document.getElementById("ballot-state").textContent)}catch(e){state={picks:{},notes:{}}}
+state.picks=state.picks||{};state.notes=state.notes||{};
+
+const el=(tag,attrs,kids)=>{const n=document.createElement(tag);for(const k in attrs||{}){if(k==="text")n.textContent=attrs[k];else n.setAttribute(k,attrs[k])}(kids||[]).forEach(c=>c&&n.appendChild(c));return n};
+
+let canEdit=false;
+function choiceBtn(key,val,label){
+  const at={type:"button",class:"choice","aria-pressed":String(state.picks[key]===val)};if(!canEdit)at.disabled="";
+  const b=el("button",at,[el("span",{class:"oval","aria-hidden":"true"}),el("span",{text:label})]);
+  b.addEventListener("click",()=>{if(!canEdit)return;state.picks[key]=state.picks[key]===val?undefined:val;if(!state.picks[key])delete state.picks[key];render();queueSave()});
+  return b;
+}
+function noteBox(key){
+  if(!canEdit){return state.notes[key]?el("p",{class:"mynote",text:"Rachel's note: "+state.notes[key]}):null}
+  const i=el("input",{id:"note-"+key,type:"text",placeholder:"Notes (why, questions to check)","aria-label":"Notes"});
+  i.value=state.notes[key]||"";
+  i.addEventListener("input",()=>{if(i.value)state.notes[key]=i.value;else delete state.notes[key];queueSave()});
+  return el("div",{class:"note"},[i]);
+}
+function render(){
+  const focusId=document.activeElement&&document.activeElement.id;
+  const P=document.getElementById("props");P.textContent="";
+  PROPS.forEach(p=>{
+    const key="p"+p.n;
+    const split=new Set(p.e.filter(x=>x!=="-")).size>1;
+    const ends=el("div",{class:"ends"},p.e.map((v,i)=>{const s=el("span",{class:"end"});s.append(ORGS[i]+" ");s.appendChild(el("b",{class:CLS[v],text:LBL[v]}));return s}));
+    const info=el("div",{style:"min-width:0"},[el("h3",{},[el("span",{class:"num",text:"PROP "+p.n}),el("span",{text:p.t})]),el("p",{text:p.s}),split?el("span",{class:"flag",text:"⚑ Groups split on this one"}):null,ends]);
+    P.appendChild(el("article",{class:"contest"},[info,el("div",{class:"choices"},[choiceBtn(key,"YES","Yes"),choiceBtn(key,"NO","No")]),noteBox(key)]));
+  });
+  const R=document.getElementById("races");R.textContent="";
+  let lastG="";
+  RACES.forEach(r=>{
+    if(r.g!==lastG){R.appendChild(el("h4",{text:r.g}));lastG=r.g}
+    const info=el("div",{style:"min-width:0"},[el("h3",{text:r.t}),r.u?el("p",{class:"unopp",text:r.u}):null,r.f?el("span",{class:"flag",text:"⚑ "+r.f}):null,r.e.length?el("div",{class:"ends"},r.e.map(x=>el("span",{class:"end",text:x}))):null]);
+    R.appendChild(el("article",{class:"contest"},[info,el("div",{class:"choices"},r.c.map(c=>choiceBtn(r.id,c,c))),noteBox(r.id)]));
+  });
+  const L=document.getElementById("locals");L.textContent="";
+  LOCALS.forEach(m=>{
+    const o=m.o||["Yes","No"];
+    const info=el("div",{style:"min-width:0"},[el("h3",{},[el("span",{class:"num",text:m.n.toUpperCase()}),el("span",{text:m.t})]),el("p",{text:m.s}),el("div",{class:"ends"},m.e.map(x=>el("span",{class:"end",text:x})))]);
+    L.appendChild(el("article",{class:"contest"},[info,el("div",{class:"choices"},[choiceBtn(m.id,"YES",o[0]),choiceBtn(m.id,"NO",o[1])]),noteBox(m.id)]));
+  });
+  const J=document.getElementById("judges");J.textContent="";
+  JUDGES.forEach(([c,n])=>{
+    const key="j_"+n.toLowerCase().replace(/[^a-z]+/g,"");
+    J.appendChild(el("div",{class:"judge"},[el("span",{class:"court",text:c}),el("span",{class:"name",text:n}),el("div",{class:"choices"},[choiceBtn(key,"YES","Yes"),choiceBtn(key,"NO","No")])]));
+  });
+  const total=PROPS.length+RACES.length+LOCALS.length+JUDGES.length,done=Object.keys(state.picks).length;
+  void total;void done;
+  if(focusId){const f=document.getElementById(focusId);if(f)f.focus()}
+}
+function queueSave(){}
+render();
+})();
+</script>
+</body>
+</html>
